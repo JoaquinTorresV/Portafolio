@@ -1,24 +1,11 @@
-import Image from "next/image";
 export default function Nav() {
     return (
-        <ul className="flex justify-around items-center p-8 bg-gray-400 bg-opacity-50 text-black border-b-2 border-black fixed top-0 left-0 w-full z-50">
-            <li className="ml-8">
-                <Image src="/perfil.jpg" alt="logo" width={150} height={200} className="ml-8 rounded-full border-2 border-white " />
-            </li>
-            <div className="flex space-x-6">
-            <li>
-                <a href="/">Home</a>
-            </li>
-            <li>
-                <a href="#proyectos">Proyectos</a>
-            </li>
-            <li>
-                <a href="#about">Sobre Mi</a>
-            </li>
-            <li>
-                <a href="#contact">Contacto</a>
-            </li>
-            </div>
-        </ul> 
+      <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 bg-gray-800 bg-opacity-50 backdrop-blur-md text-white px-8 py-3 rounded-full shadow-lg flex space-x-6 z-50">
+        <a href="/" className="hover:text-blue-400 transition duration-300">Home</a>
+        <a href="#proyectos" className="hover:text-blue-400 transition duration-300">Proyectos</a>
+        <a href="#about" className="hover:text-blue-400 transition duration-300">Sobre Mí</a>
+        <a href="#contact" className="hover:text-blue-400 transition duration-300">Contacto</a>
+      </nav>
     );
-}
+  }
+  
